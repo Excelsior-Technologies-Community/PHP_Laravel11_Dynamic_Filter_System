@@ -4,17 +4,14 @@
 
 # Laravel 11 – Product CRUD System (With Price Sorting Only)
 
-![Laravel](https://img.shields.io/badge/Laravel-11-orange)
-![PHP](https://img.shields.io/badge/PHP-8.2-blue)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
-![MySQL](https://img.shields.io/badge/Database-MySQL-yellow)
+
 This README contains **full step-by-step explanation** of the entire Product CRUD setup.  
 As requested, **only the Price Sorting feature is included** —  
 No live search, no pagination, no AJAX.
 
 ---
 
- Step 1: Install Laravel 11
+# Step 1: Install Laravel 11
 
 ```
 composer create-project laravel/laravel example-app
@@ -24,7 +21,7 @@ Creates a fresh Laravel 11 project.
 
 ---
 
- Step 2: Configure MySQL Database
+# Step 2: Configure MySQL Database
 
 Update `.env`:
 
@@ -39,7 +36,7 @@ DB_PASSWORD=root
 
 ---
 
- Step 3: Create Products Table Migration
+# Step 3: Create Products Table Migration
 
 ```
 php artisan make:migration create_products_table --create=products
@@ -65,7 +62,7 @@ php artisan migrate
 
 ---
 
- Step 4: Create Model & Resource Controller
+ #Step 4: Create Model & Resource Controller
 
 ```
 php artisan make:controller ProductController --resource --model=Product
@@ -81,7 +78,7 @@ protected $fillable = [
 
 ---
 
- Step 5: Add Resource Route
+# Step 5: Add Resource Route
 
 In `routes/web.php`:
 
@@ -93,7 +90,7 @@ Route::resource('products', ProductController::class);
 
 ---
 
- Step 6: Controller — Add ONLY Price Sorting
+# Step 6: Controller — Add ONLY Price Sorting
 
 The `index()` method handles price sorting:
 
@@ -126,7 +123,7 @@ public function index(Request $request)
 
 ---
 
- Step 7: Sorting Dropdown in Blade
+# Step 7: Sorting Dropdown in Blade
 
 Add to `index.blade.php`:
 
@@ -143,7 +140,7 @@ Add to `index.blade.php`:
 
 ---
 
- Step 8: Display Products (Simple Table)
+# Step 8: Display Products (Simple Table)
 
 ```blade
 <table>
@@ -169,7 +166,7 @@ Add to `index.blade.php`:
 
 ---
 
- Step 9: Add Product Form (Create)
+# Step 9: Add Product Form (Create)
 
 Fields required:
 
@@ -188,7 +185,7 @@ Same fields as Create.
 
 ---
 
- Step 11: Delete Product
+# Step 11: Delete Product
 
 Controller automatically supports delete via:
 
@@ -201,7 +198,7 @@ Controller automatically supports delete via:
 ```
 
 ---
-step 12: run the server
+# step 12: run the server
 
 php artisan serve
 
