@@ -2,8 +2,7 @@
 
 
 
-# Laravel 11 – Product CRUD System (With Price Sorting Only)
-
+# PHP_Laravel11_Dynamic_Filter_System
 
 This README contains **full step-by-step explanation** of the entire Product CRUD setup.  
 As requested, **only the Price Sorting feature is included** —  
