@@ -184,7 +184,7 @@ Same fields as Create.
 
 ---
 
-# Step 11: Delete Product
+# Step 10: Delete Product
 
 Controller automatically supports delete via:
 
@@ -197,7 +197,7 @@ Controller automatically supports delete via:
 ```
 
 ---
-# step 12: run the server
+# step 11: run the server
 
 php artisan serve
 
